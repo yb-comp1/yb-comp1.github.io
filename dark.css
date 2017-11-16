@@ -1,0 +1,245 @@
+/*This Creates the Background color*/
+.content {
+    background-color: #C19A6B;
+}
+
+/*This defines the font of the web-page for paragraphs*/
+.content p {
+    font-family:"Ariel", sans-serif;
+    color:black;
+}
+
+.tan1{
+  background-color: tan;
+}
+
+/*This allows the image to increase and decrease in size without making it look dis-oriented*/
+img {
+    width:100%;
+}
+
+/*This creates a box around the content*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+/* indicate active page on nav */
+.active {
+    background-color: #4CAF50;
+}
+
+/* A - Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 24px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/*This is what allows you make the background character blue*/
+body {
+    background-color: #C19A6B; 
+}
+
+/*This creates the button for the accordian*/
+button.accordion {
+    background-color: #7B3F00;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+/*This creates the buttons for the accordion which acts as a drop down*/
+button.accordion.active, button.accordion:hover {
+    background-color: #7B3F00; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #C19A6B;
+}
+
+/*This creates the button for the star wars header and links to the websites*/
+.button {
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+ 
+}
+
+/*This is the button with the animations next to the main content*/
+.button1 {
+    border-radius: 4px;
+    background-color: chocolate;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: auoto;
+    height: auoto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  /*This creates the buttons on the side of the text which would also lead to the sub pages.*/
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.hcolor{
+    border-style: solid;
+    border-color: #7B3F00;
+    border-width: 10px;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 9px;
+
+}
+
+/* Create two equal columns that floats next to each other */
+.column4 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column4 {
+        width: 100%;
+
+
