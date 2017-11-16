@@ -1,1 +1,394 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @yb-comp1
+ Sign out
+ Watch 0
+  Star 0  Fork 0 YB-Master-5/YB-Master.github.io
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
+Branch: master Find file Copy pathYB-Master.github.io/exercises/index.html
+76fca2f  7 days ago
+@YB-Master-5 YB-Master-5 Update index.html
+1 contributor
+RawBlameHistory    
+390 lines (315 sloc)  15.7 KB
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+body{
+background-color: lightblue;
+}
+button.accordion {
+    background-color: #368BC1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc; 
+}
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: lightblue;
+}
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+ 
+}
+</style>
+</head>
+<body>
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-blue w3-animate-right w3-top w3-text-light-blue w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-blue w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Star Wars</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-light-blue" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<h1>Excercises</h1>
+<br>
+<p>To access all of the excercises please click on the excercise name. From here you are able to see a brief overview, part of the sample code and then corresponding w3 schools link.Use control U to view the source code!</p> 
+<h2>Excercises 1</h2>
+
+<button class="accordion">Attributes</button>
+<div class="panel">
+  <p>All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value" Attribute are things that are already in HTML which alows you to make HTML Websites. These include image tags paragraph tags, headers, the main point of this is to be able to make HTML websites.To Learn more about attributes click here!</p>
+<p>Here are some example attributes</p>
+<p> &lt img src="img_girl.jpg" &gt, &lt img src="img src="img_girl.jpg" width="500" height="600" &gt, &lt img src="img_girl.jpg" alt="Girl with a jacket" &gt, &lt p style="color:red">I am a paragraph &gt</p>
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_attributes.asp'">W3-Schools Attributes</a></li>
+</div>
+
+<button class="accordion">Headings</button>
+<div class="panel">
+  <p>Search engines use the headings to index the structure and content of your web pages. Users skim your pages by its headings. It is important to use headings to show the document structure. h1 headings should be used for main headings, followed by &lt h2 &gt headings, then the less important h3, and so on. Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+<p>Here are some example Headings</p>
+<p>  h1 This is heading 1 /h1
+<hr>
+ h2 This is heading 2 /h2
+
+
+ h2 This is heading 2 /h2 </p>
+
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_headings.asp'">W3-Schools Headings</a></li>
+
+</div>
+
+
+<button class="accordion">Paragraphs</button>
+<div class="panel">
+  <p>You cannot be sure how HTML will be displayed.
+
+Large or small screens, and resized windows will create different results.
+
+With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.
+
+The browser will remove any extra spaces and extra lines when the page is displayed. This may serve as problem to many and it is called the poem problem!</p>
+<p>
+<p>Here is a sample paragraph:</p>
+<p> &lt p &gt
+
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+  
+  Oh, bring back my Bonnie to me.
+&lt /p &gt</p>
+
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_paragraphs.asp'">W3-Schools Paragraphs</a></li>
+</div>
+<button class="accordion">Styles</button>
+<div class="panel">
+  <p>Setting the style of an HTML element, can be done with the style attribute. The HTML style attribute has the following syntax: tagname style="property:value;" The property is a CSS property. The value is a CSS value. You will learn more about CSS later in this tutorial. The background-color property defines the background color for an HTML element. This example sets the background color for a page to powderblue. The color property defines the text color for an HTML element. The font-family property defines the font to be used for an HTML element. The font-size property defines the text size for an HTML element. The text-align property defines the horizontal text alignment for an HTML element.</p>
+<p>Here are some Samples<p>
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:40px;">I am big</p>
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_styles.asp'">W3-Schools Styles</a></li>
+</div>
+
+
+
+<button class="accordion">Formatting</button>
+<div class="panel">
+  <p>In the previous chapter, you learned about the HTML style attribute. HTML also defines special elements for defining text with a special meaning. HTML uses elements like b and i for formatting output, like bold or italic text. Formatting elements were designed to display special types of text: b - Bold text strong - Important text i - Italic text em - Emphasized text mark - Marked text small - Small text del - Deleted text ins - Inserted text sub - Subscript text sup - Superscript text </p>
+  
+<p>Here is an example</p>
+<p><b>This text is bold.</b></p>
+<p><strong>This text is strong</strong></p>
+<p><i>This text is italic</i></p>
+<p>HTML <mark>Marked</mark> Formatting</p>
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_formatting.asp'">W3-Schools Formatting</a></li>
+</div>
+
+<button class="accordion">Quotations</button>
+<div class="panel">
+  <p> The HTML q element defines a short quotation. Browsers usually insert quotation marks around the q element.The HTML blockquote element defines a section that is quoted from another source. Browsers usually indent blockquote elements. The HTML abbr element defines an abbreviation or an acronym. Marking abbreviations can give useful information to browsers, translation systems and search-engines.The HTML address element defines contact information (author/owner) of a document or an article. The address element is usually displayed in italic. Most browsers will add a line break before and after the element.</p>
+  <p>Here is an example</p>
+  <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+  <p>Here is a quote from WWF's website:</p>
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+	For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_quotation_elements.asp'">W3-Schools Quotations</a></li>
+
+</blockquote>
+</div>
+
+<button class="accordion">Comments</button>
+<div class="panel">
+  <p>Notice that there is an exclamation point (!) in the opening tag, but not in the closing tag. Note: Comments are not displayed by the browser, but they can help document your HTML source code. With comments you can place notifications and reminders in your HTML:</p>
+ <p>Here is an example:</p>
+	<p> &lt !--[if IE 9] &gt
+    .... some HTML here ....
+&lt ![endif]-- &gt </p>
+<li><a href="#news" <button onclick="'https://www.w3schools.com/html/html_comments.asp'">W3-Schools Comments</a></li>
+</div>
+
+<button class="accordion">Colors</button>
+<div class="panel">
+  <p>HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. You can set the background color for HTML elements. You can set the color of borders. In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values: Same as color name "Tomato":</p>
+  <p>Here is an example</p>
+  <p style="background-color:lightgreen;">Lorem ipsum...</p>
+  <li><a href="#news" <button onclick="'https://www.w3schools.com/html/html_colors.asp'">W3-Schools Colors</a></li>
+</div>
+
+
+<h2>Excercises 2</h2>
+
+<button class="accordion">Lists</button>
+<div class="panel">
+  <p>The CSS list-style-type property is used to define the style of the list item marker:
+
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked</p>
+<p>Here is a example</p>
+<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_lists.asp'">W3-Schools Lists</a></li>
+
+</div>
+
+
+<button class="accordion">Images</button>
+<div class="panel">
+  <p>Images can improve the design and the apperance of a web page. The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+The value of the alt attribute should describe the image. Both the width, height, and style attributes are valid in HTML5.
+
+However, we suggest using the style attribute. It prevents styles sheets from changing the size of images. The width and height attributes always defines the width and height of the image in pixels.
+
+Note: Always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loadsAlternatively, you can use the width and height attributes. You can use the style attribute to specify the width and height of an image.</p>
+<p>
+<p>Here is a sample:</p>
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:300px;height:200px;">
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_images.asp'">W3-Schools Images</a></li>
+</div>
+<button class="accordion">Tables</button>
+<div class="panel">
+  <p>A table is a data structure that organizes information into rows and columns. It can be used to both store and display data in a structured format. For example, databases store data in tables so that information can be quickly accessed from specific rows</p>
+<p>Here are some Samples<p>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_tables.asp'">W3-Schools Tables</a></li>
+</div>
+
+
+
+<button class="accordion">Links</button>
+<div class="panel">
+  <p>HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Note: A link does not have to be text. It can be an image or any other HTML element. The href attribute specifies the destination address (https://www.w3schools.com/html/) of the link.
+
+The link text is the visible part (Visit our HTML tutorial).
+
+Clicking on the link text will send you to the specified address.
+
+Note: Without a forward slash on subfolder addresses, you might generate two requests to the server. Many servers will automatically add a forward slash to the address, and then create a new request. By default, a link will appear like this (in all browsers):
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+You can change the default colors, by using styles:</p
+<p>Here are few examples</p>
+<p><a href="default.asp">HTML tutorial</a></p>
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+</a>
+
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_links.asp'">W3-Schools Links</a></li>
+</div>
+
+<button class="accordion">Blocks</button>
+<div class="panel">
+  <p>You can create a grid of boxes that fills the browser width and wraps nicely. This has been possible for a long time using float, but now with inline-block it's even easier. inline-block elements are like inline elements but they can have a width and height. Let's look at examples of both approaches.</p>
+  
+<p>Here is an example</p>
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div> 
+<li><a href="#news" <button onclick="window.location.href='https://www.w3schools.com/html/html_blocks.asp'">W3-Schools Blocks</a></li>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
 
