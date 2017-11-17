@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+body{
+background-color: lightblue;
+}
+button.accordion {
+    background-color: #368BC1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc; 
+}
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: lightblue;
+}
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+ 
+}
+</style>
+</head>
+<body>
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-blue w3-animate-right w3-top w3-text-black w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="https://sites.google.com/sduhsd.net/ecsfall2017-bollapragaday4747/home" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-blue w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">How the Internet Works</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-light-blue" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<br>
+<p>To access all of the excercises please click on the excercise name. From here you are able to see a brief overview, part of the sample code and then corresponding w3 schools link.Use control U to view the source code!</p> 
+
+<h2><center><b>How the Internet Works Part 1</b></center></h2>
+
+<h3>What are Layers?</h3>
+<p>In the OSI model, control is passed from one layer to the next, starting at the application layer (Layer 7) in one station, and proceeding to the bottom layer, over the channel to the next station and back up the hierarchy. The OSI model takes the task of inter-networking and divides that up into what is referred to as a vertical stack that consists of the following 7 layers. Click each link in the list below to read detailed information and examples of each layer: Layer 7 - Application Layer 6 - Presentation Layer 5 - Session Layer 4 - Transport Layer 3 - Network Layer 2 - Data Link
+    Layer 1 - Physical
+</p>
+
+
+<button class="accordion">Physical Layer</button>
+    <div class="panel">
+        <div class="w3-row w3-border">
+            <div class="w3-half w3-container w3-blue w3-border">
+                  <p>This layer plays with most of the network’s physical connections - wireless transmission, cabling, cabling standards and types, connectors and types, network interface cards, and more - as per network requirements. However, the physical layer does not deal with the actual physical medium (like copper, fiber).</p>
+            </div>
+            <div class="w3-half w3-container">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/41pwjLwa0yL.jpg" width="auto">  
+            </div>
+        </div>
+
+    </div>
+
+<button class="accordion">Network Layer</button>
+    <div class="panel">
+        <div class="w3-row w3-border">
+            <div class="w3-half w3-container w3-blue w3-border">
+                  <p>The network layer is considered the backbone of the OSI Model. It selects and manages the best logical path for data transfer between nodes. This layer contains hardware devices such as routers, bridges, firewalls and switches, but it actually creates a logical image of the most efficient communication route and implements it with a physical medium. </p>
+            </div>
+            <div class="w3-half w3-container">
+                  <img src="http://www.carnica-technology.com/images/segger/IPv6_Stack.png" width="auto">  
+            </div>
+        </div>
+    </div>
+
+<h2><center><b>How the Internet Works Part 2</b></center></h2>
+
+<button class="accordion">Transport Layer</button>
+    <div class="panel">
+        <div class="w3-row w3-border">
+            <div class="w3-half w3-container w3-blue w3-border">
+                  <p>The transport layer is also responsible for the management of error correction, providing quality and reliability to the end user. This layer enables the host to send and receive error corrected data, packets or messages over a network and is the network component that allows multiplexing. </p>
+            </div>
+            <div class="w3-half w3-container">
+                  <img src="https://eelzinga.files.wordpress.com/2009/07/directcall.png" width="auto">  
+            </div>
+        </div>
+    </div>
+
+
+<button class="accordion">Application Layer</button>
+    <div class="panel">
+        <div class="w3-row w3-border">
+            <div class="w3-half w3-container w3-blue w3-border">
+                  <p>The application layer provides full end-user access to a variety of shared network services for efficient OSI model data flow. This layer has many responsibilities, including error handling and recovery, data flow over a network and full network flow. It is also used to develop network-based applications.</p>
+            </div>
+            <div class="w3-half w3-container">
+                  <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAZmAAAAJGU4MDk0ZDZjLTE0YmEtNGE0OC1iYzU1LWI5OTkyY2UyY2Y0ZA.png" width="auto">  
+            </div>
+        </div>
+    </div>
+
+<button class="accordion">HTTP</button>
+    <div class="panel">
+        <div class="w3-row w3-border">
+            <div class="w3-half w3-container w3-blue w3-border">
+                  <p>HTTP is called a stateless protocol because each command is executed independently, without any knowledge of the commands that came before it. This is the main reason that it is difficult to implement Web sites that react intelligently to user input. This shortcoming of HTTP is being addressed in a number of new technologies, including ActiveX, Java, JavaScript and cookies.</p>
+            </div>
+            <div class="w3-half w3-container">
+                  <img src="https://scotthelme.co.uk/content/images/2016/02/HTTPS_icon.png" width="auto">  
+            </div>
+        </div>
+    </div>
+
+
+
+<button class="accordion">DNS</button>
+    <div class="panel">
+        <div class="w3-row w3-border">
+            <div class="w3-half w3-container w3-blue w3-border">
+                  <p> Domain Name Servers (DNS) are the Internet's equivalent of a phone book. They maintain a directory of domain names and translate them to Internet Protocol (IP) addresses. This is necessary because, although domain names are easy for people to remember, computers or machines, access websites based on IP addresses. Information from all the domain name servers across the Internet are gathered together and housed at the Central Registry. Host companies and Internet Service Providers interact with the Central Registry on a regular schedule to get updated DNS information. </p>
+            </div>
+            <div class="w3-half w3-container">
+                  <img src="https://1138blog.files.wordpress.com/2017/08/dns_bash.png?w=400&h=200&crop=1" width="auto">  
+            </div>
+        </div>
+    </div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
