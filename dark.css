@@ -165,6 +165,10 @@ div.panel {
  
 }
 
+ul.a {
+    list-style-type: circle;
+}
+
 /*This is the button with the animations next to the main content*/
 .button1 {
     border-radius: 4px;
@@ -206,6 +210,22 @@ div.panel {
     right: 0;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 .hcolor{
     border-style: solid;
     border-color: #7B3F00;
@@ -241,22 +261,5 @@ hr {
 @media (max-width: 600px) {
     .column4 {
         width: 100%;
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-ul.a {
-    list-style-type: circle;
-}
